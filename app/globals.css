@@ -1,4 +1,3 @@
-
 @import "tailwindcss";
 
 :root{
@@ -160,5 +159,91 @@ transform:translateY(0);
 .fade-up{
 
 animation:fadeUp 1s ease;
+
+}
+
+.container{
+    width:min(1400px,92%);
+    margin:auto;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+@keyframes logoGlow{
+
+0%{
+filter:drop-shadow(0 0 10px rgba(59,130,246,.25));
+transform:scale(1);
+}
+
+50%{
+filter:drop-shadow(0 0 35px rgba(59,130,246,.75));
+transform:scale(1.02);
+}
+
+100%{
+filter:drop-shadow(0 0 10px rgba(59,130,246,.25));
+transform:scale(1);
+}
+
+}
+
+.logo-glow{
+animation:logoGlow 4s ease-in-out infinite;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+.fade-up{
+animation:fadeUp .9s ease;
+}
+
+.section-title{
+
+font-size:clamp(2rem,5vw,4rem);
+
+font-weight:900;
+
+margin-bottom:2rem;
+
+}
+
+.card{
+
+background:#0C2855;
+
+border:1px solid rgba(59,130,246,.15);
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+border-color:#3B82F6;
+
+box-shadow:0 20px 40px rgba(0,0,0,.3);
 
 }
