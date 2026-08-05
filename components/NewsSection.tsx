@@ -1,40 +1,66 @@
+import Image from "next/image";
+import Link from "next/link";
 import { news } from "@/data/news";
-import NewsCard from "./NewsCard";
 
-export default function NewsSection(){
+export default function NewsSection() {
+  // Показываем только три последние новости
+  const latestNews = news.slice(0, 3);
 
-return(
+  return (
+    <section className="py-20">
+      <div className="container">
 
-<section className="container py-20">
+        <div className="flex items-center justify-between mb-10">
+          <h2 className="section-title">Новости клуба</h2>
 
-<div className="flex justify-between items-center mb-10">
+          <Link
+            href="/news"
+            className="text-blue-400 hover:text-blue-300 transition font-semibold"
+          >
+            Все новости →
+          </Link>
+        </div>
 
-<h2 className="text-5xl font-black">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 
-Последние новости
+          {latestNews.map((item) => (
 
-</h2>
+            <article
+              key={item.id}
+              className="card overflow-hidden hover:scale-[1.02] transition duration-300"
+            >
 
-</div>
+              <div className="relative aspect-[16/9]">
 
-<div className="grid lg:grid-cols-3 gap-8">
-
-{news.slice(0,3).map(item=>(
-
-<NewsCard
-
-key={item.id}
-
-item={item}
-
+               <Image
+  src={item.cover}
+  alt={item.title}
+  fill
+  className="object-cover"
 />
 
-))}
 
-</div>
+             <p className="text-blue-400 text-sm mb-2">
+  {item.date}
+</p>
 
-</section>
+<h3 className="text-2xl font-bold">
+  {item.title}
+</h3>
 
-);
+<p className="mt-4 text-slate-400 line-clamp-3">
+  {item.excerpt}
+</p>
 
+              </div>
+
+            </article>
+
+          ))}
+
+        </div>
+
+      </div>
+    </section>
+  );
 }
