@@ -32,3 +32,5 @@ className="card flex items-center justify-center h-36 text-xl font-bold"
 </section>
 
     );
+
+}
