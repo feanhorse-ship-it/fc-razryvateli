@@ -1,25 +1,46 @@
-import Image from "next/image";
-
 export default function SquadPreview() {
-  return (
-    <section className="container py-20">
 
-      <h2 className="text-4xl font-black mb-10">
-        Стартовый состав
-      </h2>
+return(
 
-      <div className="bg-[#0C2855] rounded-3xl overflow-hidden">
+<section className="py-20">
 
-        <Image
-          src="/images/formation.png"
-          alt="Состав"
-          width={1600}
-          height={900}
-          className="w-full"
-        />
+<div className="container">
 
-      </div>
+<h2 className="section-title">
+Состав
+</h2>
 
-    </section>
-  );
+<div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+
+{["Вратарь","Защитник","Полузащитник","Нападающий","Капитан"].map((player)=>(
+
+<div
+key={player}
+className="card p-8 text-center"
+>
+
+<div className="text-6xl mb-5">
+⚽
+</div>
+
+<h3 className="font-bold">
+{player}
+</h3>
+
+<p className="text-slate-400 mt-2">
+ФК Разрыватели
+</p>
+
+</div>
+
+))}
+
+</div>
+
+</div>
+
+</section>
+
+);
+
 }
