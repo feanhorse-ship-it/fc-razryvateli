@@ -234,8 +234,35 @@ description:"Центральный форвард. Кличка - Барбос.
 
 },
 
+{
+
+id:9, 
+
+name:"Дмитрий Барменков",
+
+slug:"barmen",
+
+number:64,
+
+position:"Защитник",
+
+age:16,
+
+height:174,
+
+weight:65,
+
+captain:false,
+
+photo:"/players/player9.jpg",
+
+description:"Центральный защитник."
+
+},
+
 
 ];
+
 
 
 
