@@ -12,7 +12,6 @@ export default function Header() {
     { href: "/news", label: "Новости" },
     { href: "/matches", label: "Матчи" },
     { href: "/squad", label: "Состав" },
-    { href: "/gallery", label: "Галерея" },
     { href: "/about", label: "О клубе" },
   ];
 
