@@ -46,7 +46,7 @@ weight:70,
 
 captain:true,
 
-photo:"/players/player1.png",
+photo:"/players/player1.jpg",
 
 description:"Основной вратарь клуба."
 
@@ -72,7 +72,7 @@ weight:80,
 
 captain:false,
 
-photo:"/players/player2.png",
+photo:"/players/player2.jpg",
 
 description:"Центральный защитник команды. Также является запасным вратарём."
 
@@ -96,7 +96,7 @@ height:185,
 
 weight:73,
 
-photo:"/players/player3.png",
+photo:"/players/player3.jpg",
 
 captain:false,
 
@@ -124,7 +124,7 @@ weight:60,
 
 captain:false,
 
-photo:"/players/player4.png",
+photo:"/players/player4.jpg",
 
 description:"Правый полузащитник."
 
@@ -150,7 +150,7 @@ weight:68,
 
 captain:false,
 
-photo:"/players/player4.png",
+photo:"/players/player5.jpg",
 
 description:"Центральный защитник."
 
@@ -176,7 +176,7 @@ weight:110,
 
 captain:false,
 
-photo:"/players/player4.png",
+photo:"/players/player6.jpg",
 
 description:"Центральный защитник."
 
@@ -202,7 +202,7 @@ weight:60,
 
 captain:false,
 
-photo:"/players/player4.png",
+photo:"/players/player7.jpg",
 
 description:"Правый защитник."
 
@@ -228,7 +228,7 @@ weight:68,
 
 captain:false,
 
-photo:"/players/player4.png",
+photo:"/players/player8.jpg",
 
 description:"Центральный форвард. Кличка - Барбос."
 
