@@ -6,7 +6,7 @@ export default function NewsSection() {
   const latestNews = news.slice(0, 3);
 
   return (
-    <section className="bg-[#071B3B] py-20 sm:py-24">
+    <section id="news" className="py-16 sm:py-20">
       <div className="container px-4 sm:px-6 lg:px-8">
 
         {/* Заголовок */}

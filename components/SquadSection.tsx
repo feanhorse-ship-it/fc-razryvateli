@@ -4,7 +4,7 @@ import { players } from "@/data/players";
 
 export default function SquadSection() {
   return (
-    <section className="bg-[#071B3B] py-16 sm:py-20 lg:py-24">
+    <section className="py-16 sm:py-20 lg:py-24">
       <div className="container px-4 sm:px-6 lg:px-8">
 
         {/* Заголовок */}

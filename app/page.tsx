@@ -7,20 +7,13 @@ import PartnersSection from "@/components/PartnersSection";
 
 export default function Home() {
   return (
-    <main className="bg-[#071B3B] text-white">
-
+    <div className="text-white">
       <Hero />
-
       <NewsSection />
-
       <NextMatchSection />
-
       <SquadPreview />
-
       <GalleryPreview />
-
       <PartnersSection />
-
-    </main>
+    </div>
   );
 }
