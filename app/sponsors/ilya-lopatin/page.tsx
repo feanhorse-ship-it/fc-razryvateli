@@ -9,16 +9,16 @@ export default function IlyaLopatinPage() {
 
   if (!player) {
     return (
-      <main className="min-h-screen bg-[#071B3B] px-4 py-24 text-center text-white">
+      <div className="min-h-screen px-4 pt-32 pb-24 text-center text-white">
         <h1 className="text-3xl font-black">
           Игрок не найден
         </h1>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className="min-h-screen bg-[#071B3B] px-4 py-24">
+    <div className="min-h-screen px-4 pt-28 pb-24 sm:pt-32">
 
       <div className="mx-auto max-w-5xl">
 
@@ -104,6 +104,6 @@ export default function IlyaLopatinPage() {
 
       </div>
 
-    </main>
+    </div>
   );
 }

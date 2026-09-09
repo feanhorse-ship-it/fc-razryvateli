@@ -20,7 +20,7 @@ export default function Squad() {
   );
 
   return (
-    <main className="min-h-screen bg-[#071B3B] px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+    <div className="min-h-screen px-4 pb-16 pt-28 sm:px-6 sm:pt-32 lg:px-8 lg:pt-36">
 
       <div className="mx-auto max-w-7xl">
 
@@ -70,7 +70,7 @@ export default function Squad() {
 
       </div>
 
-    </main>
+    </div>
   );
 }
 
